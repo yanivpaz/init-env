@@ -1,0 +1,4 @@
+startup_message off
+backtick 1 0 10 $HOME/my_screen.sh
+caption always "%{+b rk}%H%{gk} |%c %{yk}%d.%m.%Y | %1` | %72=Load: %l %{wk} "
+hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%? "
