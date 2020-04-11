@@ -24,6 +24,7 @@ more info:
 
 
 ### Quick screen keys 
+```
 <ctrl+A> c : create new screen windows
 
 <ctrl+A> num
@@ -33,3 +34,4 @@ OR
 <ctrl+A> S :  create new vertical screen
 <ctrl+A> | :  create new horizontal screen
 <ctrl+A> tab :  switch between screens
+```
