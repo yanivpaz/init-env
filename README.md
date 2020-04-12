@@ -34,4 +34,5 @@ OR
 <ctrl+A> S :  create new vertical screen
 <ctrl+A> | :  create new horizontal screen
 <ctrl+A> tab :  switch between screens
+<ctrl+A> esc <arrow up/down>: scroll up/down
 ```
