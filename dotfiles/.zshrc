@@ -9,6 +9,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 export KUBE_PS1_ENABLED=false
+prompt_aws(){}
 export PROMPT=$PROMPT'$(kube_ps1) '
 
 # All other scripts run from $ZSH_CUSTOM
