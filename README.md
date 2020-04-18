@@ -20,7 +20,15 @@ git alias for add commit and push
 ```
 
 ## Screen setup
-* See dotfiles/.screensrc
+
+* installation
+```
+
+sudo apt install screen
+ curl -o ~/.zshrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.screenrc
+```
+
+
 more info:
 * https://www.kilobitspersecond.com/2014/02/10/understanding-gnu-screens-hardstatus-strings/
 * https://www.linuxjournal.com/article/10950 
