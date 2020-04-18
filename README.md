@@ -6,7 +6,7 @@
   * See https://www.sitepoint.com/zsh-tips-tricks/ for details
 * Copy /.zshrc 
 ```
- curl -o ~/.screenrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.zshrc
+ curl -o  ~/.zshrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.zshrc
 ```
 
 
@@ -25,7 +25,7 @@ git alias for add commit and push
 ```
 
 sudo apt install screen
- curl -o ~/.zshrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.screenrc
+ curl -o ~/.screenrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.screenrc
 ```
 
 
