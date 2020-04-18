@@ -21,19 +21,14 @@ git alias for add commit and push
 
 ## Screen setup
 
-* installation
+* Installation
 ```
-
 sudo apt install screen
- curl -o ~/.screenrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.screenrc
+sudo chmod 777 /run/screen
+curl -o ~/.screenrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.screenrc
 ```
 
-
-more info:
-* https://www.kilobitspersecond.com/2014/02/10/understanding-gnu-screens-hardstatus-strings/
-* https://www.linuxjournal.com/article/10950 
-
-### Quick screen keys 
+* Quick screen keys 
 ```
 <ctrl+A> c : create new screen windows
 
@@ -46,3 +41,7 @@ OR
 <ctrl+A> tab :  switch between screens
 <ctrl+A> esc <arrow up/down>: scroll up/down
 ```
+
+* More info:
+* https://www.kilobitspersecond.com/2014/02/10/understanding-gnu-screens-hardstatus-strings/
+* https://www.linuxjournal.com/article/10950 
