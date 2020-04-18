@@ -2,9 +2,13 @@
 
 ## Shell setup
 
-* install zsh and oh-my-zsh
+* Install zsh and oh-my-zsh
   * See https://www.sitepoint.com/zsh-tips-tricks/ for details
-  * See dotfiles/.zshrc example 
+* Copy /.zshrc 
+```
+ curl -o ~/.zshrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.zshrc
+```
+
 
 * update $ZSH_CUSTOM
 copy all *zsh files to $ZSH_CUSTOM directory
