@@ -25,6 +25,7 @@ git alias for add commit and push
 ```
 sudo apt install screen
 sudo chmod 777 /run/screen
+sudo mkdir -p  /run/screen
 curl -o ~/.screenrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.screenrc
 ```
 
