@@ -10,7 +10,7 @@
 ```
 
 
-* update $ZSH_CUSTOM
+* update $ZSH_CUSTOM  
 copy all *zsh files to $ZSH_CUSTOM directory
 
 ## Git Setup
@@ -18,6 +18,8 @@ git alias for add commit and push
 ```
  git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
+* more info:
+https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/
 
 ## Screen setup
 
