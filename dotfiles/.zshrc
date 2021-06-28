@@ -12,7 +12,7 @@ export PROMPT=$PROMPT'$(kube_ps1) '
 
 # All other scripts run from $ZSH_CUSTOM
 
-
+#sudo apt install zsh-autosuggestions zsh-syntax-highlighting
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source .oh-my-zsh/custom/themes/agnoster.zsh-theme
