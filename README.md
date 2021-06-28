@@ -20,6 +20,15 @@ git alias for add commit and push
 ```
 * more info:
 https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/
+## fzf
+```
+sudo apt install fzf 
+mkdir -p  ~/.oh-my-zsh/custom/plugins/fzf/
+cd ~/.oh-my-zsh/custom/plugins/fzf/
+curl -LO https://raw.githubusercontent.com/joshskidmore/zsh-fzf-history-search/master/zsh-fzf-history-search.zsh
+```
+
+
 
 ## Screen setup
 
