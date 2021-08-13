@@ -1,8 +1,11 @@
 #!/bin/sh
-# example arn:aws:iam::123456789:mfa/yanivpaz
-MFA_SERIAL=$1
+usage : mfa.sh <MFA_SERIAL> <TOKEN> 
+MFA_SERIAL - get from IAM console under user security 
+TOKEN - the MFA token 
 
-# the MFA token
+example : mfa.sh  arn:aws:iam::123456789:mfa/yanivpaz 123456
+
+MFA_SERIAL=$1
 MFA_TOKEN=$2
 
 aws sts get-session-token --serial-number  $MFA_SERIAL  --token-code $MFA_TOKEN >myfile
