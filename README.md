@@ -61,12 +61,9 @@ OR
 ```
 
 * More info:
-* https://www.kilobitspersecond.com/2014/02/10/understanding-gnu-screens-hardstatus-strings/
-* https://www.linuxjournal.com/article/10950 
+ * https://www.kilobitspersecond.com/2014/02/10/understanding-gnu-screens-hardstatus-strings/
+ * https://www.linuxjournal.com/article/10950 
 
-* date issues
-```
-sudo hwclock -s    
-``
+
 
 
