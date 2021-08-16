@@ -2,8 +2,7 @@
 
 ## Shell setup
 
-* Install zsh and oh-my-zsh
-  * See https://www.sitepoint.com/zsh-tips-tricks/ for details
+* Install zsh and oh-my-zsh - see https://www.sitepoint.com/zsh-tips-tricks/ for details
 * Copy /.zshrc 
 ```
  curl -o  ~/.zshrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.zshrc
@@ -13,8 +12,15 @@
 * update $ZSH_CUSTOM  
 copy all *zsh files to $ZSH_CUSTOM directory
 
-## Git Setup
-git alias for add commit and push
+## Git 
+### key gen 
+```
+git config --global user.name "name  name "
+git config --global user.email "your email "
+cat /dev/zero | ssh-keygen -q -N ""
+```
+
+### git alias for add commit and push
 ```
  git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
