@@ -8,16 +8,21 @@ locale-gen "en_US.UTF-8"
 curl -s https://raw.githubusercontent.com/yanivpaz/utils-setup/main/install-k8s-utils.sh |bash
 ```
 
-```
-git config --global user.name "name  name "
-git config --global user.email "your email "
-cat /dev/zero | ssh-keygen -q -N ""
-```
+
 
 ## Usefull commands 
+### set display 
 ```
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+```
+
+### sort packages according to size
+```
 dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
+```
+### sync date
+```
+sudo hwclock -s 
 ```
 
 ```
