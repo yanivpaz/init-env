@@ -2,10 +2,17 @@
 
 ## Shell setup
 
-* Install zsh and oh-my-zsh - see https://www.sitepoint.com/zsh-tips-tricks/ for details
+* Install zsh and oh-my-zsh 
+```
+  sudo apt install zsh -y
+  chsh -s $(which zsh)
+  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+see https://www.sitepoint.com/zsh-tips-tricks/ for more details
+
 * Copy /.zshrc 
 ```
-curl -o  ~/.zshrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.zshrc
+  curl -o  ~/.zshrc https://raw.githubusercontent.com/yanivpaz/init-env/master/dotfiles/.zshrc
 ```
 
 
