@@ -1,4 +1,4 @@
 # New env setup
 
-[WSL setup](wsl.md)  
-[Terminal setup](terminal.md)
+[WSL setup](docs/wsl.md)  
+[Terminal setup](docs/terminal.md)
