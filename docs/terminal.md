@@ -25,15 +25,15 @@ see https://www.sitepoint.com/zsh-tips-tricks/ for more details
 
 
 * Update $ZSH_CUSTOM  
-copy all *zsh files to $ZSH_CUSTOM directory
+
 ```
 export ZSH_CUSTOM=${ZSH_CUSTOM:-$ZSH/custom}
 # ensure cd <current git repo location>
 cp -f zsh/* $ZSH_CUSTOM
 cp -f themes/* $ZSH_CUSTOM/themes
-mkdir -p  ${ZSH_CUSTOM}/plugins/fzf/
-cd ${ZSH_CUSTOM}/plugins/fzf/
-curl -LO https://raw.githubusercontent.com/joshskidmore/zsh-fzf-history-search/master/zsh-fzf-history-search.zsh
+mkdir -p  ${ZSH_CUSTOM}/plugins/{fzf,zsh-z}
+curl -LO https://raw.githubusercontent.com/joshskidmore/zsh-fzf-history-search/master/zsh-fzf-history-search.zsh --output ${ZSH_CUSTOM}/plugins/fzf
+curl -LO https://raw.githubusercontent.com/agkozak/zsh-z/master/zsh-z.plugin.zsh --output ${ZSH_CUSTOM}/plugins/zsh-z
 ```
 
 
