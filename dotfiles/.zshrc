@@ -17,7 +17,7 @@ source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/themes/agnoster.zsh-theme
 source ~/.oh-my-zsh/custom/plugins/zsh-z/zsh-z.plugin.zsh
-source ~/.oh-my-zsh/custom/plugins/fzf/zsh-fzf-history-search
+source ~/.oh-my-zsh/custom/plugins/fzf/zsh-fzf-history-search.zsh
 
 
 

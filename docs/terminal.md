@@ -1,10 +1,18 @@
 # Terminal setup
 
+## Preparation
+Clone the sources 
+```
+git clone https://github.com/yanivpaz/init-env.git
+OR
+git clone git@github.com:yanivpaz/init-env.git
+```
+
 ## Shell setup
 
 * Install zsh and oh-my-zsh 
 ```
-  sudo apt install zsh -y
+  sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting fzf -y 
   chsh -s $(which zsh)
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
@@ -15,11 +23,21 @@ see https://www.sitepoint.com/zsh-tips-tricks/ for more details
   curl -o  ~/.zshrc https://raw.githubusercontent.com/yanivpaz/init-env/master/dotfiles/.zshrc
 ```
 
-yaniv
 
-
-* update $ZSH_CUSTOM  
+* Update $ZSH_CUSTOM  
 copy all *zsh files to $ZSH_CUSTOM directory
+```
+export ZSH_CUSTOM=${ZSH_CUSTOM:-$ZSH/custom}
+# ensure cd <current git repo location>
+cp -f zsh/* $ZSH_CUSTOM
+cp -f themes/* $ZSH_CUSTOM/themes
+mkdir -p  ${ZSH_CUSTOM}/plugins/fzf/
+cd ${ZSH_CUSTOM}/plugins/fzf/
+curl -LO https://raw.githubusercontent.com/joshskidmore/zsh-fzf-history-search/master/zsh-fzf-history-search.zsh
+```
+
+
+
 
 ## Git 
 ### key gen 
@@ -35,13 +53,7 @@ git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git pu
 ```
 more info:
 https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/
-## fzf
-```
-sudo apt install fzf 
-mkdir -p  ~/.oh-my-zsh/custom/plugins/fzf/
-cd ~/.oh-my-zsh/custom/plugins/fzf/
-curl -LO https://raw.githubusercontent.com/joshskidmore/zsh-fzf-history-search/master/zsh-fzf-history-search.zsh
-```
+
 
 ## Screen setup
 * Installation
@@ -49,7 +61,7 @@ curl -LO https://raw.githubusercontent.com/joshskidmore/zsh-fzf-history-search/m
 sudo apt install screen
 sudo chmod 777 /run/screen
 sudo mkdir -p  /run/screen
-curl -o ~/.screenrc https://raw.githubusercontent.com/yanivpaz/init-files/master/dotfiles/.screenrc
+curl -o ~/.screenrc https://raw.githubusercontent.com/yanivpaz/init-env/master/dotfiles/.screenrc
 ```
 
 * Screen keys 
