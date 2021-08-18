@@ -15,6 +15,8 @@ see https://www.sitepoint.com/zsh-tips-tricks/ for more details
   curl -o  ~/.zshrc https://raw.githubusercontent.com/yanivpaz/init-env/master/dotfiles/.zshrc
 ```
 
+yaniv
+
 
 * update $ZSH_CUSTOM  
 copy all *zsh files to $ZSH_CUSTOM directory
