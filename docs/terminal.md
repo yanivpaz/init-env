@@ -1,23 +1,17 @@
 # Terminal setup
 
 ## Preparation
-Clone the sources 
-```
-git clone https://github.com/yanivpaz/init-env.git
-OR
-git clone git@github.com:yanivpaz/init-env.git
-```
 
-## Shell setup
-
-* Install zsh and oh-my-zsh 
+Install zsh and oh-my-zsh 
 ```
   sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting fzf -y 
   chsh -s $(which zsh)
 ```  
   - lougout and login again 
   - for .zshrc file creation click 'q'
-  install oh my zsh
+
+## Shell setup
+Install oh my zsh
 ```
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
