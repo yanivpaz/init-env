@@ -33,6 +33,7 @@ export ZSH_CUSTOM=${ZSH_CUSTOM:-$ZSH/custom}
 mkdir -p  ${ZSH_CUSTOM}/plugins/{fzf,zsh-z}
 curl -L https://raw.githubusercontent.com/joshskidmore/zsh-fzf-history-search/master/zsh-fzf-history-search.zsh --output ${ZSH_CUSTOM}/plugins/fzf/zsh-fzf-history-search.zsh
 curl -L https://raw.githubusercontent.com/agkozak/zsh-z/master/zsh-z.plugin.zsh --output ${ZSH_CUSTOM}/plugins/zsh-z.plugin.zsh
+curl -L https://raw.githubusercontent.com/yanivpaz/init-env/master/theme/agnoster.zsh-theme --output ${ZSH_CUSTOM}/agnoster.zsh-theme
 ```
 
 
