@@ -14,6 +14,11 @@ git clone git@github.com:yanivpaz/init-env.git
 ```
   sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting fzf -y 
   chsh -s $(which zsh)
+```  
+  - lougout and login again 
+  - for .zshrc file creation click 'q'
+  install oh my zsh
+```
   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 see https://www.sitepoint.com/zsh-tips-tricks/ for more details
