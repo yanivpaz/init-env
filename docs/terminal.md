@@ -58,8 +58,7 @@ https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a
 * Installation
 ```
 sudo apt install screen
-sudo chmod 777 /run/screen
-sudo mkdir -p  /run/screen
+sudo mkdir -p  /run/screen ; sudo chmod 777 /run/screen
 curl -o ~/.screenrc https://raw.githubusercontent.com/yanivpaz/init-env/master/dotfiles/.screenrc
 ```
 
