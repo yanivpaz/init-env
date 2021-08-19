@@ -35,25 +35,6 @@ curl -L https://raw.githubusercontent.com/agkozak/zsh-z/master/zsh-z.plugin.zsh 
 curl -L https://raw.githubusercontent.com/yanivpaz/init-env/master/themes/agnoster.zsh-theme --output ${ZSH_CUSTOM}/agnoster.zsh-theme
 ```
 
-
-
-
-## Git 
-### key gen 
-```
-git config --global user.name "name  name "
-git config --global user.email "your email "
-cat /dev/zero | ssh-keygen -q -N ""
-```
-
-### git alias for add commit and push
-```
-git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
-```
-more info:
-https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/
-
-
 ## Screen setup
 * Installation
 ```
