@@ -6,25 +6,35 @@ apt install curl vim sudo dos2unix dnsutils less lsof man netcat psmisc jq wget 
 locale-gen "en_US.UTF-8"
 ```
 
-## Usefull commands 
-### set display 
+## Common K8S utils 
 ```
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
-```
-
-### sort packages according to size
-```
-dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
-```
-### sync date
-```
-sudo hwclock -s 
+curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/k8s-utils.sh |bash
 ```
 
-## Add users
+## Common AWS utils 
 ```
-useradd -m yanivpaz -g users -s /bin/bash 
-passwd yanivpaz
-usermod -aG sudo yanivpaz
-su - yanivpaz
+curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/aws-utils.sh |bash
 ```
+
+## Terraform 
+```
+curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/install-terraform.sh |bash
+```
+
+
+## Git 
+### key gen 
+```
+git config --global user.name "name  name "
+git config --global user.email "your email "
+cat /dev/zero | ssh-keygen -q -N ""
+```
+
+### git alias for add commit and push
+```
+git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
+```
+more info:
+https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/
+
+
