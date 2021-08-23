@@ -1,9 +1,9 @@
 #!/bin/sh
-usage : mfa.sh <MFA_SERIAL> <TOKEN> 
-MFA_SERIAL - get from IAM console under user security 
-TOKEN - the MFA token 
+#usage : mfa.sh <MFA_SERIAL> <TOKEN> 
+#MFA_SERIAL - get from IAM console under user security 
+#TOKEN - the MFA token 
 
-example : mfa.sh  arn:aws:iam::123456789:mfa/yanivpaz 123456
+#example : mfa.sh  arn:aws:iam::123456789:mfa/yanivpaz 123456
 
 MFA_SERIAL=$1
 MFA_TOKEN=$2
