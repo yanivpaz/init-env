@@ -1,7 +1,7 @@
 # Quick script to install relevant software in cloudshell 
 # run the following command :
 
-sudo pip3 install  awscli --upgrade 
+# sudo pip3 install  awscli --upgrade 
 
 if [ ! -f /usr/local/bin/scheduler-cli ]
 then
