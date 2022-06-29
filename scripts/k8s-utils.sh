@@ -38,6 +38,19 @@ then
  rm -rf k9s.tar.gz
 fi
 
+
+if [ ! -f /usr/local/bin/crictl ]
+then
+ export VERSION=`curl -L https://github.com/kubernetes-sigs/cri-tools/releases/latest --silent | grep  "crictl-.*linux-amd64.tar.gz"  | head -1 | cut -d'-' -f2
+`
+ wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz
+ sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin
+ rm -f crictl-$VERSION-linux-amd64.tar.gz
+fi
+
+
+
+
 #EKS_CLUSTER=`aws eks list-clusters --output text |tail -1 | awk '{print $2}'|tail -1`
 #KUBECONFIG="aws eks update-kubeconfig --name $EKS_CLUSTER"
 #eval echo $KUBECONFIG
