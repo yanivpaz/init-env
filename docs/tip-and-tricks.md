@@ -20,3 +20,9 @@ passwd yanivpaz
 usermod -aG sudo yanivpaz
 su - yanivpaz
 ```
+
+
+## Add git alias 
+```
+git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
+```
