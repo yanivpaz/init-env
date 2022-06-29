@@ -63,6 +63,6 @@ fi
 
 #EKS_CLUSTER=`aws eks list-clusters --output text |tail -1 | awk '{print $2}'|tail -1`
 #KUBECONFIG="aws eks update-kubeconfig --name $EKS_CLUSTER"
-#eval echo $KUBECONFIG
+#eval echo $KUBECONFIG 
 
 
