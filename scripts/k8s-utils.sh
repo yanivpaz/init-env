@@ -49,6 +49,16 @@ then
 fi
 
 
+if [ ! -f /usr/local/bin/nerdctl ]
+then
+ export VERSION=`curl -L   https://github.com/containerd/nerdctl/releases/latest --silent | grep  "nerdctl-.*linux-amd64.tar.gz"  | head -1 | cut -d'-' -f2`
+ wget https://github.com/containerd/nerdctl/releases/download/${VERSION}/nerdctl-${VERSION}-linux-amd64.tar.gz
+ sudo tar zxvf nerdctl-${VERSION}-linux-amd64.tar.gz -C /usr/local/bin
+ rm -f nerdctl-${VERSION}-linux-amd64.tar.gz
+fi
+
+
+
 
 
 #EKS_CLUSTER=`aws eks list-clusters --output text |tail -1 | awk '{print $2}'|tail -1`
