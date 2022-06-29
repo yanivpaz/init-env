@@ -26,3 +26,8 @@ su - yanivpaz
 ```
 git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
+
+
+## Paste is slow   
+see https://github.com/zsh-users/zsh-autosuggestions/issues/102#issuecomment-178267194  
+add export DISABLE_MAGIC_FUNCTIONS=true in the begining of ~/.zshrc
