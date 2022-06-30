@@ -1,16 +1,22 @@
 # WSL setup
+Note: This script document refer to latest version of each doc, which is not always recommended  
+
 
 ## Common packages setup
 ```
 apt install curl vim sudo dos2unix dnsutils less lsof man netcat psmisc jq wget bc dnsutils locales git python3-pip  unzip  -y
+```
+
+## Locale
+```
 locale-gen "en_US.UTF-8"
 ```
 
-## Common K8S utils 
+## K8S utils 
 ```
 curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/k8s-utils.sh |bash
 ```
-## Common AWS utils 
+## AWS utils 
 
 
 install AWS CLI  see https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
@@ -28,7 +34,6 @@ curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/insta
 ## K8s
 * Install  Rancher desktop 
 * Kubernetes tools - curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/k8s-utils.sh |bash
-
 
 
 ## Docker  
@@ -56,6 +61,8 @@ cat /dev/zero | ssh-keygen -q -N ""
 ```
 git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
+
+
 more info:
 https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/  
 
