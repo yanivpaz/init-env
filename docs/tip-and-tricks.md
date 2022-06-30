@@ -27,6 +27,10 @@ usermod -aG sudo yanivpaz
 su - yanivpaz
 ```
 
+## Ignore AWS CLI pager
+```
+export AWS_PAGER=""
+```
 
 ## Add git alias 
 ```
