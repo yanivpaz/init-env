@@ -3,6 +3,7 @@
 * AWS CLI   
   see https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
+## TODO latest 
 * GH CLI 
 ```
 curl -LO https://github.com/cli/cli/releases/download/v2.13.0/gh_2.13.0_linux_amd64.tar.gz
