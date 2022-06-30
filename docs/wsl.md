@@ -10,8 +10,12 @@ locale-gen "en_US.UTF-8"
 ```
 curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/k8s-utils.sh |bash
 ```
-
 ## Common AWS utils 
+
+
+install AWS CLI  see https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
+#TODO - add AWS cli to script below
+
 ```
 curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/aws-utils.sh |bash
 ```
@@ -53,6 +57,6 @@ cat /dev/zero | ssh-keygen -q -N ""
 git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git push; }; f'
 ```
 more info:
-https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/
+https://pascalnaber.wordpress.com/2019/10/05/have-a-great-looking-terminal-and-a-more-effective-shell-with-oh-my-zsh-on-wsl-2-using-windows/  
 
 
