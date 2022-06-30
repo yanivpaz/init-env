@@ -21,6 +21,24 @@ curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/aws-u
 curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/install-terraform.sh |bash
 ```
 
+## K8s
+* Install  Rancher desktop 
+* Kubernetes tools - curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/k8s-utils.sh |bash
+
+
+
+## Docker  
+```
+sudo apt install docker.io
+sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
+sudo dockerd &
+```
+
+Test 
+```
+sudo docker run   hello-world
+```
+
 
 ## Git 
 ### key gen 
