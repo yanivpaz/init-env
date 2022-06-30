@@ -1,4 +1,11 @@
 # Tools setup - WSL2
+* kubens and kubectl 
+```
+sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
+sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
+sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
+```
+OR see https://github.com/ahmetb/kubectx#apt-debian 
 
 
 #Change to latest 
