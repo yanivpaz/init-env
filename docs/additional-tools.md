@@ -35,3 +35,9 @@ sudo sh -c "echo 'deb http://download.opensuse.org/repositories/devel:/kubic:/li
 sudo wget -nv https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_${VERSION_ID}/Release.key -O- | sudo apt-key add -
 sudo apt install podman -y
 ```
+
+* jfrog login 
+```
+curl -fL https://getcli.jfrog.io | sh
+sudo mv  jfrog /usr/local/bin
+```
