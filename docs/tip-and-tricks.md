@@ -38,6 +38,11 @@ git config --global alias.acp '!f() { git add -A && git commit -m "$@" && git pu
 ```
 
 
-## Paste is slow   
+## Paste is slow in zsh   
 see https://github.com/zsh-users/zsh-autosuggestions/issues/102#issuecomment-178267194  
 add export DISABLE_MAGIC_FUNCTIONS=true in the begining of ~/.zshrc
+
+## Alias to chrome
+```
+ alias chrome="/mnt/c/Program\ Files/Google/Chrome/Application/chrome.exe"
+```
