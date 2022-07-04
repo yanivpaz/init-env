@@ -28,3 +28,10 @@ sudo dpkg -i trivy_0.29.2_Linux-64bit.deb
 sudo apt-get -y install skopeo
 ```
 
+* podman 
+```
+source /etc/os-release
+sudo sh -c "echo 'deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /' > /etc/apt/sources.list.d/devel:kubic:libcontainers:stable.list"
+sudo wget -nv https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_${VERSION_ID}/Release.key -O- | sudo apt-key add -
+sudo apt install podman -y
+```
