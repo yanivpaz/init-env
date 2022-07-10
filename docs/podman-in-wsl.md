@@ -29,5 +29,4 @@ sam local invoke
 
 ### Run dynmodb 
 ```
-podman run  --volume /home/yanivp/dnymodb-volume:/home/dynamodblocal/data -p 8000:8000 -d amazon/dynamodb-local
-```
+podman run  --volume /home/yanivp/dnymodb-volume:/home/dynamodblocal/data -p 8000:8000 -d -e AWS_ACCESS_KEY_ID=DUMMYEXAMPLEKEY -e AWS_SECRET_ACCESS_KEY=DUMMYEXAMPLEKEY -e REGION=eu-west-1 amazon/dynamodb-local```
