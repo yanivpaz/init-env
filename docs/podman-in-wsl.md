@@ -15,10 +15,19 @@ podman system service --time=0 unix://$SOCK_FILE &  echo "$!" > $PID_FILE
 ```
 
 ## in client
+### Define env vars
 ```
 export DOCKER_HOST=unix:///run/user/podman/podman.sock
 sudo apt install podman-docker
+chown `id -u`:`id -g` /run/user/podman/podman.sock
+```
 
-TODO : fix to run without sudo 
-sudo -E  sam local invoke
+## Run sam local 
+```
+sam local invoke
+```
+
+### Run dynmodb 
+```
+podman run  --volume /home/yanivp/dnymodb-volume:/home/dynamodblocal/data -p 8000:8000 -d amazon/dynamodb-local
 ```
