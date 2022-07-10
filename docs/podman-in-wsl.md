@@ -1,3 +1,10 @@
+## Add docker registry 
+Add the following to /etc/containers/registries.conf
+```
+[registries.search]
+registries = ['docker.io']
+```
+
 ## start podman service
 ```
 port BASEPATH=/run/user/podman
