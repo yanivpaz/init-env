@@ -19,6 +19,10 @@ dpkg-query -Wf '${Installed-Size}\t${Package}\n' | sort -n
 sudo hwclock -s 
 ```
 
+## Run podman instead of docker 
+
+[see here](podman-in-wsl.md)
+
 ## Add users
 ```
 useradd -m yanivpaz -g users -s /bin/bash 
