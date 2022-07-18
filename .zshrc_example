@@ -20,8 +20,12 @@ source ~/.oh-my-zsh/custom/plugins/fzf/zsh-fzf-history-search.zsh
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=249'
 
 
+# for NVM 
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+NEWLINE=$'\n'
+PROMPT="$PROMPT${NEWLINE}>"
+
