@@ -42,8 +42,36 @@ sudo wget -nv https://download.opensuse.org/repositories/devel:kubic:libcontaine
 sudo apt install podman -y
 ```
 
-* jfrog login 
+* jfrog  
 ```
 curl -fL https://getcli.jfrog.io | sh
 sudo mv  jfrog /usr/local/bin
 ```
+
+
+
+* https://github.com/ibraheemdev/modern-Unix
+```
+apt install duf bat 
+sudo pip3 install tldr
+
+curl -LO https://github.com/Peltoche/lsd/releases/download/0.22.0/lsd_0.22.0_amd64.deb
+sudo dpkg -i lsd_0.22.0_amd64.deb
+
+curl -LO https://github.com/rs/curlie/releases/download/v1.6.9/curlie_1.6.9_linux_amd64.deb
+sudo dpkg -i ./curlie_1.6.9_linux_amd64.deb
+```
+
+add the following aliases 
+```
+alias df=duf
+alias ls=lsd
+alias curl=curlie 
+alias cat=batcat 
+#alias cat='/usr/bin/batcat --paging=never'
+alias curl=curlie
+```
+
+
+
+
