@@ -13,7 +13,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs: 
-      input_environments: 
+      environments: 
         description: 'choose environment ' 
         required: true
         
@@ -24,7 +24,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: self-hosted
     environment:
-      name: ${{ input_environments }}
+      name: ${{ environments }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
