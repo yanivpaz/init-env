@@ -12,7 +12,11 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
+    inputs: 
+      input_environments: 
+        description: 'choose environment ' 
+        required: true
+        
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -20,7 +24,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: self-hosted
     environment:
-      name: test
+      name: ${{ input_environments }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -43,5 +47,5 @@ jobs:
           MYSECRET_ENV: ${{ secrets.MY_SECRET }}
         run: |
           echo $MYSECRET_ENV
-          env 
+           
        
