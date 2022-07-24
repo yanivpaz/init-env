@@ -16,6 +16,7 @@ on:
       environments: 
         description: 'choose environment ' 
         required: true
+        default: 'test'
         
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,7 +25,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: self-hosted
     environment:
-      name: ${{ environments }}
+      name: ${{ github.event.inputs.environments }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
