@@ -34,4 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - run:  env     
+          
+          
+      - name: Set up secret file
+        env:
+          MYSECRET_ENV: ${{ secrets.MY_SECRET }}
+        run: |
+          echo $MYSECRET_ENV
+       
