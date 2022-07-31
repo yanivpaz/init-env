@@ -7,6 +7,13 @@ sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
 ```
 OR see https://github.com/ahmetb/kubectx#apt-debian 
 
+another option is too kubie :
+```
+curl -LO https://github.com/sbstp/kubie/releases/download/v0.17.2/kubie-linux-amd64
+sudo mv ./kubie-linux-amd64 /usr/local/bin/kubie
+sudo chmod 755  /usr/local/bin/kubie
+```
+
 
 #Change to latest 
 * GH CLI 
@@ -47,6 +54,7 @@ sudo apt install podman -y
 curl -fL https://getcli.jfrog.io | sh
 sudo mv  jfrog /usr/local/bin
 ```
+
 
 
 
