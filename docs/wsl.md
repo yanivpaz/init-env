@@ -17,13 +17,17 @@ locale-gen "en_US.UTF-8"
 curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/k8s-utils.sh |bash
 ```
 ## AWS utils 
-
-
 install AWS CLI  see https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html  
-#TODO - add AWS cli to script below
 
 ```
 curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/aws-utils.sh |bash
+```
+
+#TODO - add AWS cli to script below
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
 ```
 
 ## Terraform 
@@ -32,7 +36,6 @@ curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/insta
 ```
 
 ## K8s
-* Install  Rancher desktop 
 * Kubernetes tools - curl -s https://raw.githubusercontent.com/yanivpaz/init-env/master/scripts/k8s-utils.sh |bash
 
 
