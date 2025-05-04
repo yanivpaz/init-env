@@ -4,7 +4,7 @@ Note: This script document refer to latest version of each doc, which is not alw
 
 ## Common packages setup
 ```
-apt install curl vim sudo dos2unix dnsutils less lsof man netcat psmisc jq wget bc dnsutils locales git python3-pip  unzip  -y
+sudo apt update && sudo apt install -y curl vim dos2unix dnsutils less lsof man netcat-openbsd psmisc jq wget bc locales git python3-pip unzip
 ```
 
 ## Locale
